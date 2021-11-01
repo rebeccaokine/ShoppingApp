@@ -11,6 +11,7 @@ const App = () => (
         fontSize:20,
         color:'#E5CCFF',
         textAlign:'center',
+        fontFamily:'papyrus',
         }}>by Rebecca</Text>
     </ImageBackground>
   </View>
@@ -27,7 +28,8 @@ const styles = StyleSheet.create({
   text: {
     marginTop:500,
     color: '#E5CCFF',
-    fontSize: 40,
+    fontFamily: 'Brush Script MT',
+    fontSize: 50,
     fontWeight: '700',
     textAlign: 'center',
   },
