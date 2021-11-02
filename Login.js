@@ -1,10 +1,11 @@
 import React from 'react';
-import { ImageBackground, StyleSheet, Text, View,TouchableOpacity } from 'react-native';
+import { ImageBackground, StyleSheet, Text, View,TouchableOpacity,SafeAreaView } from 'react-native';
+import { AntDesign } from '@expo/vector-icons';
 
-const image = { uri: 'https://i.pinimg.com/564x/25/ab/db/25abdbe3361d84950e69f6d865f7518a.jpg' };
+const image = { uri: 'https://i.pinimg.com/564x/2f/ad/28/2fad28ac214b54a0420dbbf103657039.jpg' };
 
-const App = () => (
-  <View style={styles.container}>
+const Login = () => (
+  <SafeAreaView style={styles.container}>
     <ImageBackground source={image} resizeMode="cover" style={styles.image}>
       <TouchableOpacity 
      style={{ 
@@ -14,10 +15,11 @@ const App = () => (
        padding:5,
        paddingHorizontal: 20,
        marginTop:10,
+       opacity:0.5,
        flexDirection:"row",
        }}>
 
-     <Text style={{fontSize:16,color:"#E5CCFF"}}>Email</Text>
+     <Text style={{fontSize:17,color:"#E5CCFF"}}>Email</Text>
 
     </TouchableOpacity>
 
@@ -29,10 +31,11 @@ const App = () => (
        padding:5,
        paddingHorizontal: 20,
        marginTop:10,
+       opacity:0.5,
        flexDirection:"row",
        }}>
 
-     <Text style={{fontSize:16,color:"#E5CCFF"}}>Password</Text>
+     <Text style={{fontSize:17,color:"#E5CCFF"}}>Password</Text>
     </TouchableOpacity>
     
     <TouchableOpacity>
@@ -40,9 +43,25 @@ const App = () => (
       alignItems:"center",
       color:"#4C0099",
       fontWeight:500,
-      marginTop:10,
+      marginTop:5,
+      opacity:0.5,
       textAlign:'center'        
       }}>Forgot Password?</Text>
+    </TouchableOpacity>
+
+    <TouchableOpacity 
+     style={{ 
+       justifyContent: 'center',
+       backgroundColor: "#773091", 
+       borderRadius:10, 
+       padding:5,
+       paddingHorizontal: 20,
+       marginTop:20,
+       opacity:0.5,
+       flexDirection:"row",
+       }}>
+
+     <Text style={{fontSize:17,color:"#E5CCFF"}}>Login</Text>
     </TouchableOpacity>
 
      <Text style={{
@@ -52,6 +71,7 @@ const App = () => (
       marginTop:20,
       textAlign:'center',
       }}>or</Text>
+
 
     <TouchableOpacity 
      style={{ 
@@ -68,6 +88,7 @@ const App = () => (
      fontFamily: 'Cochin',
      }}>Continue with </Text>
     </TouchableOpacity>
+    
 
    
    <Text style={{
@@ -85,12 +106,13 @@ const App = () => (
     
 
     </ImageBackground>
-  </View>
+  </SafeAreaView>
 );
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    
   },
   image: {
     flex: 1,
@@ -99,4 +121,4 @@ const styles = StyleSheet.create({
   
 });
 
-export default App;
+export default Login;
