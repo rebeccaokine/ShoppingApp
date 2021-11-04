@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, Image, ScrollView } from 'react-native';
 import { Ionicons, FontAwesome, AntDesign,Feather } from '@expo/vector-icons';
 
-export default function Home() {
+export default function Home({navigation}) {
   return (
     <ScrollView
       style={{
@@ -27,7 +27,8 @@ export default function Home() {
         
         
         <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-          <TouchableOpacity>
+          <TouchableOpacity 
+          onPress={()=>{navigation.navigate("Cart")}}>
           <Feather name="shopping-bag" size={20} color="purple" />
           </TouchableOpacity>
 
