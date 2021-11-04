@@ -1,10 +1,11 @@
 import React from 'react';
-import { ImageBackground, StyleSheet, Text, View,TouchableOpacity,SafeAreaView } from 'react-native';
+import { ImageBackground, StyleSheet, Text, View,TouchableOpacity } from 'react-native';
+import { AntDesign } from '@expo/vector-icons';
 
-const image = { uri: 'https://i.pinimg.com/564x/25/ab/db/25abdbe3361d84950e69f6d865f7518a.jpg' };
+const image = { uri: 'https://i.pinimg.com/564x/2f/ad/28/2fad28ac214b54a0420dbbf103657039.jpg' };
 
-const App = () => (
-  <SafeAreaView style={styles.container}>
+const Signup = ({navigation}) => (
+  <View style={styles.container}>
     <ImageBackground source={image} resizeMode="cover" style={styles.image}>
       <TouchableOpacity 
      style={{ 
@@ -39,6 +40,7 @@ const App = () => (
     
     
     <TouchableOpacity 
+    onPress={()=>navigation.navigate('Home')}
      style={{ 
        justifyContent: 'center',
        backgroundColor: "#773091", 
@@ -62,7 +64,15 @@ const App = () => (
       }}>or</Text>
 
 
-    <TouchableOpacity 
+     <Text style={{fontSize:18,
+     color:"#E5CCFF",
+     fontFamily: 'Cochin',
+     textAlign:"center",
+     marginTop:20,
+     }}>Continue with </Text>
+
+
+ <TouchableOpacity 
      style={{ 
        justifyContent: 'center',
        borderRadius:10, 
@@ -70,16 +80,40 @@ const App = () => (
        paddingHorizontal: 20,
        marginTop:10,
        flexDirection:"row",
+       backgroundColor:"black",
+       opacity:0.7,
        }}>
-
-     <Text style={{fontSize:18,
-     color:"#E5CCFF",
-     fontFamily: 'Cochin',
-     }}>Continue with </Text>
+  <AntDesign name ="apple1" size={24} color="#B266FF"/>
+    </TouchableOpacity>
+  
+  <TouchableOpacity 
+     style={{ 
+       justifyContent: 'center',
+       borderRadius:10, 
+       padding: 10,
+       paddingHorizontal: 20,
+       marginTop:10,
+       flexDirection:"row",
+       backgroundColor:"black",
+       opacity:0.7,
+       }}>
+  <AntDesign name ="google" size={24} color="#B266FF"/>
     </TouchableOpacity>
 
-    
-
+  <TouchableOpacity 
+     style={{ 
+       justifyContent: 'center',
+       borderRadius:10, 
+       padding: 10,
+       paddingHorizontal: 20,
+       marginTop:10,
+       flexDirection:"row",
+       backgroundColor:"black",
+       opacity:0.7,
+       }}>
+  <AntDesign name ="facebook-square" size={24} color="#B266FF"/>
+    </TouchableOpacity>
+  
    
    <Text style={{
       marginTop:15,
@@ -88,7 +122,7 @@ const App = () => (
       textAlign:'center',
     }}
     >Already have an account? 
-    <TouchableOpacity>
+    <TouchableOpacity onPress={()=>navigation.navigate('Login')}>
     <Text style={{color: "#B266FF",textAlign:'center'}}> Login</Text>
     </TouchableOpacity>
     </Text>
@@ -96,7 +130,7 @@ const App = () => (
     
 
     </ImageBackground>
-  </SafeAreaView>
+  </View>
 );
 
 const styles = StyleSheet.create({
@@ -111,4 +145,4 @@ const styles = StyleSheet.create({
   
 });
 
-export default App;
+export default Signup;
