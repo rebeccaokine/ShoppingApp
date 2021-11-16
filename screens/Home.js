@@ -21,10 +21,6 @@ export default function Home({navigation}) {
         <TouchableOpacity>
         <Ionicons name="ios-menu-outline" size={24} color="purple" />
         </TouchableOpacity>
-
-        <TouchableOpacity>
-        <AntDesign name="search1" size={20} color="purple" />
-        </TouchableOpacity>
         
         
         <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
@@ -43,6 +39,12 @@ export default function Home({navigation}) {
           </TouchableOpacity>
         </View>
       </View>
+
+      <TouchableOpacity style={{backgroundColor:'white', marginTop:20, borderRadius:30, padding:12}}>
+      
+        <AntDesign name="search1" size={20} color="purple"  /> 
+        
+        </TouchableOpacity>
 
 
       <Text style=
@@ -196,7 +198,7 @@ export default function Home({navigation}) {
             </View>
 
             <Text style={{ color: '#828080', textAlign: 'center' }}>
-              Something
+              Brown nike hoodie
             </Text>
             <Text style={{ fontWeight: 'bolder', textAlign: 'center' }}>
               <Text style={{ color: 'orange', textAlign: 'center' }}>$</Text>{' '}
@@ -246,7 +248,7 @@ export default function Home({navigation}) {
             </View>
 
             <Text style={{ color: '#828080', textAlign: 'center' }}>
-              Something
+              Brown Sweats
             </Text>
             <Text style={{ fontWeight: 'bolder', textAlign: 'center' }}>
               <Text style={{ color: 'orange', textAlign: 'center' }}>$</Text>{' '}
@@ -296,7 +298,7 @@ export default function Home({navigation}) {
             </View>
 
             <Text style={{ color: '#828080', textAlign: 'center' }}>
-              Something
+              Brown dress
             </Text>
             <Text style={{ fontWeight: 'bolder', textAlign: 'center' }}>
               <Text style={{ color: 'orange', textAlign: 'center' }}>$</Text>{' '}
@@ -345,7 +347,7 @@ export default function Home({navigation}) {
               </TouchableOpacity>
             </View>
             <Text style={{ color: '#828080', textAlign: 'center' }}>
-              Orange camo dress
+              Black leather pants
             </Text>
             <Text style={{ fontWeight: 'bolder', textAlign: 'center' }}>
               <Text style={{ color: 'orange', textAlign: 'center' }}>$</Text>{' '}
@@ -397,7 +399,7 @@ export default function Home({navigation}) {
             </View>
 
             <Text style={{ color: '#828080', textAlign: 'center' }}>
-              Something
+              Bodycon dress
             </Text>
             <Text style={{ fontWeight: 'bolder', textAlign: 'center' }}>
               <Text style={{ color: 'orange', textAlign: 'center' }}>$</Text>{' '}
@@ -446,7 +448,7 @@ export default function Home({navigation}) {
               </TouchableOpacity>
             </View>
             <Text style={{ color: '#828080', textAlign: 'center' }}>
-              Orange camo dress
+              Jean jacket
             </Text>
             <Text style={{ fontWeight: 'bolder', textAlign: 'center' }}>
               <Text style={{ color: 'orange', textAlign: 'center' }}>$</Text>{' '}
@@ -498,7 +500,7 @@ export default function Home({navigation}) {
             </View>
 
             <Text style={{ color: '#828080', textAlign: 'center' }}>
-              Something
+              Butterfly jeans
             </Text>
             <Text style={{ fontWeight: 'bolder', textAlign: 'center' }}>
               <Text style={{ color: 'orange', textAlign: 'center' }}>$</Text>{' '}
