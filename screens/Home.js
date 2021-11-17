@@ -6,7 +6,7 @@ export default function Home({navigation}) {
   return (
     <ScrollView
       style={{
-        backgroundColor: '#FFC7FC',
+        backgroundColor: '#FFE5CC',
         flex: 1,
         paddingTop: 55,
         paddingHorizontal: 20,
@@ -18,15 +18,17 @@ export default function Home({navigation}) {
           justifyContent: 'space-between',
           alignItems: 'center',
         }}>
-        <TouchableOpacity>
-        <Ionicons name="ios-menu-outline" size={24} color="purple" />
+
+        <TouchableOpacity
+        onPress={()=>{navigation.navigate("Menu")}}>
+        <Ionicons name="ios-menu-outline" size={24} color="brown" />
         </TouchableOpacity>
         
         
         <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
           <TouchableOpacity 
           onPress={()=>{navigation.navigate("Cart")}}>
-          <Feather name="shopping-bag" size={20} color="purple" />
+          <Feather name="shopping-bag" size={20} color="brown" />
           </TouchableOpacity>
 
           <TouchableOpacity>
@@ -34,7 +36,7 @@ export default function Home({navigation}) {
             style={{ marginLeft: 15 }}
             name="notifications-outline"
             size={20}
-            color="purple"
+            color="brown"
           />
           </TouchableOpacity>
         </View>
@@ -51,7 +53,7 @@ export default function Home({navigation}) {
       {{ fontWeight: '700',
        marginTop: 20,
        marginBottom: 20,
-       color:'purple',
+       color:'brown',
        fontSize: 20
       }}>Categories</Text>
 
@@ -67,7 +69,7 @@ export default function Home({navigation}) {
           }}>
           <TouchableOpacity>
             <Text style={{
-               color: 'purple'
+               color: 'brown'
              }}>
              All</Text>
           </TouchableOpacity>
@@ -76,21 +78,23 @@ export default function Home({navigation}) {
         <View
           style={{ backgroundColor: 'white', padding: 10, borderRadius: 12 }}>
           <TouchableOpacity>
-            <Text style={{ color: 'purple' }}>Tops</Text>
+            <Text style={{ 
+              color: 'brown'
+               }}>Tops</Text>
           </TouchableOpacity>
         </View>
 
         <View
           style={{ backgroundColor: 'white', padding: 10, borderRadius: 12 }}>
           <TouchableOpacity>
-            <Text style={{ color: 'purple' }}>Pants</Text>
+            <Text style={{ color: 'brown' }}>Pants</Text>
           </TouchableOpacity>
         </View>
 
         <View
           style={{ backgroundColor: 'white', padding: 10, borderRadius: 12,}}>
           <TouchableOpacity>
-            <Text style={{ color: 'purple' }}>Dresses</Text>
+            <Text style={{ color: 'brown' }}>Dresses</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -106,7 +110,7 @@ export default function Home({navigation}) {
         <View style={{ flexDirection: 'column', marginVertical: 10 }}>
 
 
-         
+         <View style={{flexDirection:"row", justifyContent:"space-between"}}>
           <View
             style={{
               backgroundColor: 'white',
@@ -123,7 +127,7 @@ export default function Home({navigation}) {
             <View
               style={{
                 marginTop: 15,
-                backgroundColor: '#FACCFF',
+                backgroundColor: '#ffb266',
                 alignSelf: 'center',
                 borderRadius: 10,
                 paddingVertical: 5,
@@ -132,7 +136,7 @@ export default function Home({navigation}) {
               <TouchableOpacity>
                 <Text
                   style={{
-                    color: 'purple',
+                    color: 'brown',
                     fontWeight: 'bold',
                     textAlign: 'center',
                   }}>
@@ -140,7 +144,7 @@ export default function Home({navigation}) {
                   <Feather style={{marginLeft:5}}
                   name="shopping-bag"
                   size={20} 
-                  color="purple" 
+                  color="brown" 
                  />
                 </Text>
               </TouchableOpacity>
@@ -172,7 +176,7 @@ export default function Home({navigation}) {
             <View
               style={{
                 marginTop: 15,
-                backgroundColor: '#FACCFF',
+                backgroundColor: '#ffb266',
                 alignSelf: 'center',
                 borderRadius: 10,
                 paddingVertical: 5,
@@ -181,21 +185,20 @@ export default function Home({navigation}) {
               <TouchableOpacity>
                 <Text
                   style={{
-                    color: 'purple',
+                    color: 'brown',
                     fontWeight: 'bold',
                     textAlign: 'center',
-                    
-          
                   }}>
                   Add to Cart
                   <Feather style={{marginLeft:5}}
                   name="shopping-bag"
                   size={20} 
-                  color="purple" 
+                  color="brown" 
                  />
                 </Text>
               </TouchableOpacity>
             </View>
+
 
             <Text style={{ color: '#828080', textAlign: 'center' }}>
               Brown nike hoodie
@@ -205,8 +208,12 @@ export default function Home({navigation}) {
               77
             </Text>
           </View>
+
+          </View>
          
 
+
+           <View style={{flexDirection:"row", justifyContent:"space-between"}}>
            <View
             style={{
               backgroundColor: 'white',
@@ -223,7 +230,7 @@ export default function Home({navigation}) {
             <View
               style={{
                 marginTop: 15,
-                backgroundColor: '#FACCFF',
+                backgroundColor: '#ffb266',
                 alignSelf: 'center',
                 borderRadius: 10,
                 paddingVertical: 5,
@@ -232,16 +239,15 @@ export default function Home({navigation}) {
               <TouchableOpacity>
                 <Text
                   style={{
-                    color: 'purple',
+                    color: 'brown',
                     fontWeight: 'bold',
                     textAlign: 'center',
-          
                   }}>
                   Add to Cart
                   <Feather style={{marginLeft:5}}
                   name="shopping-bag"
                   size={20} 
-                  color="purple" 
+                  color="brown" 
                  />
                 </Text>
               </TouchableOpacity>
@@ -273,7 +279,7 @@ export default function Home({navigation}) {
             <View
               style={{
                 marginTop: 15,
-                backgroundColor: '#FACCFF',
+                backgroundColor: '#ffb266',
                 alignSelf: 'center',
                 borderRadius: 10,
                 paddingVertical: 5,
@@ -282,16 +288,15 @@ export default function Home({navigation}) {
               <TouchableOpacity>
                 <Text
                   style={{
-                    color: 'purple',
+                    color: 'brown',
                     fontWeight: 'bold',
                     textAlign: 'center',
-                    
                   }}>
                   Add to Cart
                   <Feather style={{marginLeft:5}}
                   name="shopping-bag"
                   size={20} 
-                  color="purple" 
+                  color="brown" 
                  />
                 </Text>
               </TouchableOpacity>
@@ -306,8 +311,10 @@ export default function Home({navigation}) {
             </Text>
 
           </View>
+          </View>
           
 
+          <View style={{flexDirection:"row", justifyContent:"space-between"}}>
           <View
             style={{
               backgroundColor: 'white',
@@ -324,7 +331,7 @@ export default function Home({navigation}) {
             <View
               style={{
                 marginTop: 15,
-                backgroundColor: '#FACCFF',
+                backgroundColor: '#ffb266',
                 alignSelf: 'center',
                 borderRadius: 10,
                 paddingVertical: 5,
@@ -333,7 +340,7 @@ export default function Home({navigation}) {
               <TouchableOpacity>
                 <Text
                   style={{
-                    color: 'purple',
+                    color: 'brown',
                     fontWeight: 'bold',
                     textAlign: 'center',
                   }}>
@@ -341,7 +348,7 @@ export default function Home({navigation}) {
                   <Feather style={{marginLeft:5}}
                   name="shopping-bag"
                   size={20} 
-                  color="purple" 
+                  color="brown" 
                  />
                 </Text>
               </TouchableOpacity>
@@ -373,7 +380,7 @@ export default function Home({navigation}) {
             <View
               style={{
                 marginTop: 15,
-                backgroundColor: '#FACCFF',
+                backgroundColor: '#ffb266',
                 alignSelf: 'center',
                 borderRadius: 10,
                 paddingVertical: 5,
@@ -382,17 +389,15 @@ export default function Home({navigation}) {
               <TouchableOpacity>
                 <Text
                   style={{
-                    color: 'purple',
+                    color: 'brown',
                     fontWeight: 'bold',
                     textAlign: 'center',
-                    
-          
                   }}>
                   Add to Cart
                   <Feather style={{marginLeft:5}}
                   name="shopping-bag"
                   size={20} 
-                  color="purple" 
+                  color="brown" 
                  />
                 </Text>
               </TouchableOpacity>
@@ -407,8 +412,11 @@ export default function Home({navigation}) {
             </Text>
           </View>
           </View>
+          </View>
 
-           <View>
+
+           
+          <View style={{flexDirection:"row", justifyContent:"space-between"}}>          
           <View
             style={{
               backgroundColor: 'white',
@@ -425,7 +433,7 @@ export default function Home({navigation}) {
             <View
               style={{
                 marginTop: 15,
-                backgroundColor: '#FACCFF',
+                backgroundColor: '#ffb266',
                 alignSelf: 'center',
                 borderRadius: 10,
                 paddingVertical: 5,
@@ -434,7 +442,7 @@ export default function Home({navigation}) {
               <TouchableOpacity>
                 <Text
                   style={{
-                    color: 'purple',
+                    color: 'brown',
                     fontWeight: 'bold',
                     textAlign: 'center',
                   }}>
@@ -442,7 +450,7 @@ export default function Home({navigation}) {
                   <Feather style={{marginLeft:5}}
                   name="shopping-bag"
                   size={20} 
-                  color="purple" 
+                  color="brown" 
                  />
                 </Text>
               </TouchableOpacity>
@@ -474,7 +482,7 @@ export default function Home({navigation}) {
             <View
               style={{
                 marginTop: 15,
-                backgroundColor: '#FACCFF',
+                backgroundColor: '#ffb266',
                 alignSelf: 'center',
                 borderRadius: 10,
                 paddingVertical: 5,
@@ -483,17 +491,15 @@ export default function Home({navigation}) {
               <TouchableOpacity>
                 <Text
                   style={{
-                    color: 'purple',
+                    color: 'brown',
                     fontWeight: 'bold',
                     textAlign: 'center',
-                    
-          
                   }}>
                   Add to Cart
                   <Feather style={{marginLeft:5}}
                   name="shopping-bag"
                   size={20} 
-                  color="purple" 
+                  color="brown" 
                  />
                 </Text>
               </TouchableOpacity>
@@ -507,15 +513,7 @@ export default function Home({navigation}) {
               77
             </Text>
           </View>
-        
 
-
-          
-
-          
-
-          
-      
           
         </View>
       </View>
